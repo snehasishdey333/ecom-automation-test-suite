@@ -24,5 +24,6 @@ def driver():
 
     driver = webdriver.Chrome(options=options)
     driver.get("https://www.saucedemo.com/")
+    driver.implicitly_wait(5)
     yield driver
     driver.quit()
